@@ -54,6 +54,10 @@ void BicyclePart::CopyName(char*&dest, const char*source)
 	{
 		return;
 	}
+	if(name)
+	{
+            delete[]name;
+	}
 	size_t size = strlen(source) + 1;
 	name = strcpy(new char[size], source);
 }
