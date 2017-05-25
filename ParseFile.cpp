@@ -3,13 +3,13 @@
 ParseFile::ParseFile(const char*filename1,const char*filename2)
 {
 	std::ifstream readfile(filename1, std::ios::in);
-	readfile.open(filename1);
+	//readfile.open(filename1);
 	if(!readfile)
 	{
 	   throw "Error with the read file";
 	}
 	std::ofstream writefile(filename2,std::ios::binary | std::ios::out);
-	writefile.open(filename2);
+	//writefile.open(filename2);
 }
 
 ParseFile::~ParseFile()
